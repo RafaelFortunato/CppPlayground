@@ -11,7 +11,8 @@ void alterVar(int &x, int y)
 
 void PointerTest::runTest()
 {
-    cout << "-----PointerTest-----" << endl;
+    cout << endl
+         << "-----PointerTest-----" << endl;
 
     int x = 3, y = 3;
 

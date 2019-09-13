@@ -7,7 +7,8 @@ using namespace std;
 
 void VectorTest::runTest()
 {
-    cout << "-----VectorTest-----" << endl;
+    cout << endl
+         << "-----VectorTest-----" << endl;
 
     vector<int> v = {5, 9, 3};
 
@@ -18,4 +19,9 @@ void VectorTest::runTest()
 
     for (auto i : v)
         cout << i << endl; // 5 / 5 / 9
+
+    if (find(v.begin(), v.end(), 9) != v.end())
+    {
+        cout << "Vector contains 9" << endl;
+    }
 }
